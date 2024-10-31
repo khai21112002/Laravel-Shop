@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.vertical-nav {
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.seperation-line {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    /* Light border for separation */
+    width: 90%;
+    /* Set width to 90% (or adjust as needed) */
+    margin: 0 auto;
+    /* Center it */
+    margin-top: 1rem;
+    /* Space above the line */
+    margin-bottom: 1rem;
+    /* Space below the line */
+}
+
+
+.nav-link {
+    color: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+.nav-link.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.admin-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.product-card,
+.card-body {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover,
+.card-body:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
